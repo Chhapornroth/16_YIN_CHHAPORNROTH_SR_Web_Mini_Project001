@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .shadow-dark-subtle {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+          }
+        }
+    html {
+      scroll-behavior: smooth;
+    }
+      </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon"
+    href="https://d21buns5ku92am.cloudfront.net/69780/images/480532-Veloretti-trademark-black-b88cb9-medium-1683125609.png">
+
+  <title>VELORETTI</title>
+</head>
+
+<body id="body">
+  <header class="border-b border-b-gray-300 sticky top-0 bg-white z-40">
+    <nav class="w-full flex items-center mx-auto ps-5 pe-5 pt-4 pb-4 justify-between font-[Inter] lg:p-0 lg:w-[90%]">
+      <div id="menu-sidebar" class="bars-toggle sm:mr-27 lg:hidden cursor-pointer text-xl"><i
+          class="fa-solid fa-bars"></i></div>
+      <div class="sm:flex sm:items-center sm:gap-15 sm:justify-center">
+        <a href="javascript:void(0)" class="tracking-[0.25em] text-lg mx-auto">VELORETTI</a>
+        <div class="hidden items-center justify-between gap-7 text-sm lg:flex">
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">ELECTRIC <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">CITY <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">KIDS <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">ACCESSORIES</a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">STORES</a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">LEASING <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="justify-between items-center sm:flex sm:gap-[2em] md:gap-[3em]">
+        <a href="javascript:void(0)" class="gap-1 items-center hidden sm:flex"><span>EN</span> <img
+            src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="english" class="w-5 h-5"></a>
+        <a href="javascript:void(0)" class="hidden sm:flex"><i class="fa-regular fa-user"></i></a>
+        <a href="javascript:void(0)"><svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 18 21">
+            <path
+              d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+          </svg></a>
+      </div>
+    </nav>
+  </header>
+  <aside id="sidebar"
+    class="fixed top-15 lg:hidden inset-0 bg-white bg-opacity-75 z-50 transform -translate-x-full transition-all duration-500 ease-in-out top-0 left-0 h-full">
+    <div class="flex flex-wrap font-[Inter] justify-between">
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">ELECTRIC
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">CITY
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">KIDS
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">ACCESSORIES
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">STORES
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">LEASING
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+    </div>
+    <div class="flex mx-5 mt-5 justify-between">
+      <button type="button"
+        class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mb-2 sm:w-[32%] justify-center">
+        <svg class="w-4 h-4 me-2 -ms-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm89.6 32h-12.8c-22.4 10-46.4 16-72.8 16s-50.4-6-72.8-16h-12.8C67.2 288 0 355.2 0 438.4c0 41.6 31.2 73.6 73.6 73.6h300.8c41.6 0 73.6-31.2 73.6-73.6 0-83.2-67.2-150.4-150.4-150.4z" />
+        </svg>
+        Sign In
+      </button>
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-2 sm:w-[32%] justify-center">
+        <span class="mr-2">English</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="english" class="w-5 h-5">
+        <svg class="w-2.5 h-2.5 ms-3 justify-self-end" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 4 4 4-4" />
+        </svg>
+      </button>
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-2 sm:w-[32%] justify-center hidden sm:inline-flex">
+        <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          viewBox="0 0 18 21">
+          <path
+            d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+        </svg>
+        My Card
+      </button>
+    </div>
+  </aside>
+  <main class="font-[Inter] flex flex-col gap-15 items-center">
+    <section>
+      <figure class="w-full relative text-white flex justify-center">
+        <img src="./images/bike.png" alt="a bike" class="w-full ">
+        <p class="absolute top-[42%] left-22 font-light text-[0.5rem] sm:text-sm lg:text-[1rem]">VELORETTI BUSINESS</p>
+        <h1 class="absolute top-[46%] left-20 text-3xl sm:text-5xl lg:text-[4.9rem]">Bike Lease Plan For Employees.</h1>
+      </figure>
+    </section>
+    <section class="w-full flex flex-col-reverse sm:flex-row sm:w-[90%] justify-center items-center">
+      <figure class="w-full">
+        <img src="./images/bike-modling.svg" alt="modling">
+      </figure>
+      <article class="w-full px-7 lg:px-30">
+        <h3 class="text-5xl xl:text-6xl md:mb-5">Bike plans for employees</h3>
+        <p class="my-6">Veloretti Electrics benefit both the environment
+          and the health of your employees. Oh, and they look good too.
+          Cost-free for the employer and outside of the WKR.
+        </p>
+        <button class="mb-5 bg-white text-black px-6 py-3 rounded-full shadow-dark-subtle transition">Discover
+          More</button>
+      </article>
+    </section>
+    <section>
+      <figure class="w-screen h-screen relative text-white">
+        <img src="./images/image.png" alt="a bike" class="w-full h-full object-cover object-[15%]">
+        <h2 class="absolute top-10 left-10 text-3xl sm:text-4xl lg:text-5xl sm:top-[40%] md:left-36 lg:top-[30%]">
+          Service, <br>Maintenance, and <br>Insurance
+        </h2>
+        <p class="absolute top-40 left-10 font-light mr-10 sm:top-[55%] sm:w-96 md:left-36">
+          The lease includes an all-in service package. throughout the entire 36 months,
+          you are fully insured against damage, theft, and maintenance. In addition,
+          you always have access to roadside assistance.
+        </p>
+      </figure>
+    </section>
+    <section class="w-full flex flex-col sm:flex-row sm:w-[90%] justify-center items-center">
+      <figure class="w-full">
+        <img src="./images/Bike-image.png" alt="modling">
+      </figure>
+      <article class="w-full px-7 lg:px-30">
+        <h3 class="text-5xl xl:text-6xl md:mb-5">Free of charge for employers</h3>
+        <p class="my-6">The bike plan is totally independent of the WKR and is free for you as
+          an employer. The employee pays the lease costs and you, as the employer, decide whether you want to contribute
+          to the costs.
+        </p>
+        <button class="mb-5 bg-white text-black px-6 py-3 rounded-full shadow-dark-subtle transition">Cost
+          Example</button>
+      </article>
+    </section>
+    <section class="w-full flex flex-col sm:flex-row-reverse sm:w-[90%] justify-center items-center">
+      <figure class="w-full ">
+        <img src="./images/div.sizing-small.png" alt="modling">
+      </figure>
+      <article class="w-full px-7 lg:pe-30">
+        <h3 class="text-5xl xl:text-6xl md:mb-5">How it works</h3>
+        <div class="my-6">
+          <div class="flex gap-4 items-center">
+            <div class="w-5 h-6 rounded-full bg-gray-200"></div>
+            <h4 class="text-lg">Register your company</h4>
+          </div>
+          <p class="ml-9 text-gray-500">Fill in our registration form with your company details. After
+            your registration, our leasing partner will do a credit check. You
+            will hear whether your application has been approved within 24
+            hours.</p>
+        </div>
+
+        <div class="my-6">
+          <div class="flex gap-4 items-center">
+            <div class="w-5 h-6 rounded-full bg-gray-200"></div>
+            <h4 class="text-lg">Determine the requirements</h4>
+          </div>
+          <p class="ml-9 text-gray-500">You get acces to the digital platform. Set the requirements for
+            your employees and share the registration link.</p>
+        </div>
+
+        <div class="my-6">
+          <div class="flex gap-4 items-center">
+            <div class="w-5 h-6 rounded-full bg-gray-200"></div>
+            <h4 class="text-lg">Ride your bike!</h4>
+          </div>
+          <p class="ml-9 text-gray-500">Let's go! Your employees can choose their bikes and they'll be
+            delivered straight to their homes.</p>
+        </div>
+
+        <div class="my-6">
+          <div class="flex gap-4 items-center">
+            <div class="w-5 h-6 rounded-full bg-gray-200"></div>
+            <h4 class="text-lg">Administration</h4>
+          </div>
+          <p class="ml-9 text-gray-500">Everything in one place. The digital platform gives you an easy
+            overview of all the information for your payroll.</p>
+        </div>
+      </article>
+    </section>
+    <section class="w-[90%] flex flex-col h-[400px] font-[Inter] sm:h-[500px] sm:justify-between md:flex-row md:h-[400px] lg:h-[500px] xl:h-[600px] my-16">
+      <div id="default-carousel" class="relative w-full h-[100%] md:w-[45%] bg-[#EBEDEE] rounded-xl" data-carousel="slide">
+        <h3 class="absolute top-6 left-7 lg:top-8 lg:left-8"><span class="text-xl lg:text-2xl">Electric Ace </span><sup>two</sup></h3>
+        <p class="absolute top-8 right-7 lg:top-9 lg:right-8 text-sm lg:text-lg">&#8364;69,07 NET/MONTH</p>
+        <!-- Carousel wrapper -->
+        <div class="relative flex items-center h-80 overflow-hidden rounded-lg md:h-[90%]">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3xwT46EQjsAimW3NDvrRHH%2Fbe9572821ad1eb0a1cb32a127c230b6f%2FAce_Two_Matte_Black_NEW.png&w=3840&q=75"
+              class="absolute block w-[75%] -translate-x-1/2 -translate-y-1/2 top-1/2 sm:top-[60%] left-1/2 md:top-[55%]" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F4AwTxMu2tOFfxywNVTSNNL%2F7196edcb2c2a8bc08e515f2cdfa95859%2FAce_Two_Matte_Black_2_NEW.png&w=3840&q=75"
+              class="absolute block w-[75%] -translate-x-1/2 -translate-y-1/2 top-1/2 sm:top-[60%] left-1/2 md:top-[55%]" alt="...">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse items-center">
+          <div class="w-9 h-9 rounded-full border flex items-center justify-center">
+            <button type="button" class="w-7 h-7 rounded-full !bg-black" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          </div>
+          <button type="button" class="w-7 h-7 rounded-full !bg-[#606160]" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-7 h-7 rounded-full !bg-[#DDD9CD]" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-7 h-7 rounded-full bg-[linear-gradient(to_right,black_50%,#EFE1CB_50%)]" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+      <div id="default-carousel" class="relative w-full h-[100%] md:w-[45%] bg-[#EBEDEE] rounded-xl mt-10 md:mt-0" data-carousel="slide">
+        <h3 class="absolute top-6 left-7 lg:top-8 lg:left-8"><span class="text-xl lg:text-2xl">Electric Ace </span><sup>two</sup></h3>
+        <p class="absolute top-8 right-7 lg:top-9 lg:right-8 text-sm lg:text-lg">&#8364;69,07 NET/MONTH</p>
+        <!-- Carousel wrapper -->
+        <div class="relative flex items-center h-80 overflow-hidden rounded-lg md:h-[90%]">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F3xwT46EQjsAimW3NDvrRHH%2Fbe9572821ad1eb0a1cb32a127c230b6f%2FAce_Two_Matte_Black_NEW.png&w=3840&q=75"
+              class="absolute block w-[75%] -translate-x-1/2 -translate-y-1/2 top-1/2 sm:top-[60%] left-1/2 md:top-[55%]" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="https://www.veloretti.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fqp8eahdr9bo6%2F4AwTxMu2tOFfxywNVTSNNL%2F7196edcb2c2a8bc08e515f2cdfa95859%2FAce_Two_Matte_Black_2_NEW.png&w=3840&q=75"
+              class="absolute block w-[75%] -translate-x-1/2 -translate-y-1/2 top-1/2 sm:top-[60%] left-1/2 md:top-[55%]" alt="...">
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse items-center">
+          <div class="w-9 h-9 rounded-full border flex items-center justify-center">
+            <button type="button" class="w-7 h-7 rounded-full !bg-black" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          </div>
+          <button type="button" class="w-7 h-7 rounded-full !bg-[#606160]" aria-current="false" aria-label="Slide 2"
+            data-carousel-slide-to="1"></button>
+          <button type="button" class="w-7 h-7 rounded-full !bg-[#DDD9CD]" aria-current="false" aria-label="Slide 3"
+            data-carousel-slide-to="2"></button>
+          <button type="button" class="w-7 h-7 rounded-full bg-[linear-gradient(to_right,black_50%,#EFE1CB_50%)]" aria-current="false" aria-label="Slide 4"
+            data-carousel-slide-to="3"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </section>
+    <section class="w-[90%] md:w-[60%] font-[Inter] flex flex-col items-center gap-16 mt-50 md:mt-0">
+      <h2 class="text-3xl md:text-5xl">Get in touch</h2>
+      <form action="post" class="w-full flex flex-col gap-5">
+        <input type="text" placeholder="First name" class="border w-full h-14 px-5">
+        <input type="text" placeholder="Last name" class="border w-full h-14 px-5">
+        <input type="email" placeholder="Email address" class="border w-full h-14 px-5">
+        <input type="text" placeholder="Phone number" class="border w-full h-14 px-5">
+        <input type="text" placeholder="Company name" class="border w-full h-14 px-5">
+        <select name="" id="" class="border px-5 h-14">
+          <option value="">Company Size</option>
+        </select>
+        <input type="number" placeholder="Numbers of bikes" class="border w-full h-14 px-5">
+        <textarea name="" id="" placeholder="How can i help" rows="10" class="p-5 border"></textarea>
+        <button class="bg-gray-500 text-white py-2 px-4 rounded-full">
+          send the request
+        </button>
+      </form>
+    </section>    
+    <hr class="borderborder-gray-400 w-full">
+    <section class="w-[90%] md:w-[60%] font-[Inter] flex flex-col items-center gap-16 mt-50 md:mt-0 text-black">
+      <h5 class="text-3xl">Any questions?</h5>
+      <div id="accordion-collapse" data-accordion="collapse" class="w-full">
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium border border-b-0 border-gray-200 rounded-t-xl gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false">
+            <span>What about the paperwork?</span>
+            <span class="icon-toggle text-lg font-bold">+</span>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden">
+          <div class="p-5 border border-b-0 border-gray-200">
+            <p class="mb-2">The bicycle plan is set up so that there will be no administrative work on your part as the employer. You can use a free online platform
+              that has been created by our leasing partner. This provides you with a simple overview of your business and your employees, allowing
+              you to arrange everything. It also simplifies all the paperwork. Everything is organised with just a few clicks.</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium border border-b-0 border-gray-200 rounded-t-xl gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false">
+            <span>How does it work with an employee who retires early?</span>
+            <span class="icon-toggle text-lg font-bold">+</span>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden">
+          <div class="p-5 border border-b-0 border-gray-200">
+            <p class="mb-2">The bicycle plan is set up so that there will be no administrative work on your part as the employer. You can use a free online platform
+              that has been created by our leasing partner. This provides you with a simple overview of your business and your employees, allowing
+              you to arrange everything. It also simplifies all the paperwork. Everything is organised with just a few clicks.</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium border border-b-0 border-gray-200 rounded-t-xl gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false">
+            <span>What does a Veloretti Bike Plan cost for an employer?</span>
+            <span class="icon-toggle text-lg font-bold">+</span>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden">
+          <div class="p-5 border border-b-0 border-gray-200">
+            <p class="mb-2">hmmm</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium border border-b-0 border-gray-200 rounded-t-xl gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false">
+            <span>How is the insurance & maintenance arranged when leasing a Veloretti
+              bike?</span>
+            <span class="icon-toggle text-lg font-bold">+</span>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden">
+          <div class="p-5 border border-b-0 border-gray-200">
+            <p class="mb-2">hmmm</p>
+          </div>
+        </div>
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium border border-b-0 border-gray-200 rounded-t-xl gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false">
+            <span>What are the legal requirements for the Veloretti bicycle plan?</span>
+            <span class="icon-toggle text-lg font-bold">+</span>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="hidden">
+          <div class="p-5 border border-b-0 border-gray-200">
+            <p class="mb-2">hmmm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="font-[Inter] bg-[#404243] text-white mt-14 relative">
+    <div class="bg-[#404243] py-6 px-4 md:px-12">
+      <div class="max-w-[70%] mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+        <p class="flex-1 text-sm">
+          Ready to take the Electric Ivy or Ace for a spin? Electric test rides are now available in
+          Amsterdam, Amstelveen, Abcoude, Bussum, Den Haag, Nijmegen, Weesp, Wormerveer,
+          Berlin, Hamburg, and Munich. Schedule your test ride now and we'll see you there.
+        </p>
+        <button class="bg-white text-black py-2 px-6 rounded-full text-sm flex-shrink-0">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+    <div class="border-t border-gray-500 py-8 px-4 md:px-12 bg-[#101110]">
+      <div class="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6 text-sm">
+          <div>
+            <h4 class="font-medium mb-2">Explorer</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="#">Electric bikes</a></li>
+              <li><a href="#">City bikes</a></li>
+              <li><a href="#">Kids' bikes</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Outlet</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Insurance Electric</a></li>
+              <li><a href="#">Size guide</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium mb-2">About</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium mb-2">Help</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Assembly & manuals</a></li>
+              <li><a href="#">Payment options</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col md:items-start md:ml-auto">
+          <h4 class="font-medium text-lg">Join the ride.</h4>
+          <p class="text-sm text-gray-300 mb-3">Sign up for our newsletter.</p>
+          <div class="flex border border-gray-400 rounded-full overflow-hidden w-full max-w-md">
+            <input type="email" placeholder="Enter your email address here"
+              class="flex-1 bg-transparent px-4 py-2 text-white outline-none">
+            <button class="bg-white text-black px-6 py-2 rounded-full text-sm">
+              Subscribe
+            </button>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <input type="checkbox" id="privacy" class="rounded border-gray-400">
+            <label for="privacy" class="text-xs text-gray-300">
+              By signing up, I agree to the <a href="#" class="underline">privacy policy</a> of Veloretti.
+            </label>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#body" class="absolute right-10 top-30 bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+  
+    <script>
+    let toggleMark = document.getElementById("menu-sidebar");
+    let sidebar = document.getElementById("sidebar")
+    toggleMark.addEventListener("click", () => {
+      if (document.querySelector(".bars-toggle")) {
+        toggleMark.classList.remove("bars-toggle");
+        toggleMark.classList.add("x-mark");
+        toggleMark.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        sidebar.classList.remove("-translate-x-full");
+        sidebar.classList.add("translate-x-0");
+      } else {
+        toggleMark.classList.remove("x-mark");
+        toggleMark.classList.add("bars-toggle");
+        toggleMark.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("-translate-x-full");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-accordion-target]").forEach((button) => {
+      button.addEventListener("click", function () {
+        const target = document.querySelector(this.getAttribute("data-accordion-target"));
+        const icon = this.querySelector(".icon-toggle");
+
+        // Toggle visibility
+        if (target.classList.contains("hidden")) {
+          target.classList.remove("hidden");
+          icon.textContent = "−"; // Show minus when open
+        } else {
+          target.classList.add("hidden");
+          icon.textContent = "+"; // Show plus when closed
+        }
+      });
+    });
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
