@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+          .shadow-dark-subtle {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+          }
+        }
+    html {
+      scroll-behavior: smooth;
+    }
+      </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon"
+    href="https://d21buns5ku92am.cloudfront.net/69780/images/480532-Veloretti-trademark-black-b88cb9-medium-1683125609.png">
+
+  <title>City</title>
+</head>
+
+<body id="body">
+  <header class="w-screen bg-[url('https://s3-alpha-sig.figma.com/img/449e/d337/59ac77707654c6f5837d4b4dca7add43?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kpRDZ9PNwUSdF6gwFyb~bU~3nNNnAxuYctJU1XLrEXQEQ5niHbctJhzJ8OKHGzDa3jOnQHBhgG-lRYF5YS9cCzN0Bc95ycILZpYSNEsQEYjhVaAhcjYTtiuoHdFpG1kVK5dKjh6WydGfGUqntALZuafg2ZHf8T6igDggG1tWBYXRR2DQATWZ2Jmplci2Ybaqm9Ilnt~ZffVay1UJLixfaX1JDdmXh30YQeL9iah6GNHjJv-~3gYsnL3m50edkck1vUef2xK5-NiYBQ~gNcuaj8kDLqlFw8FfUDUeSv72xheek9llGRg7uShOQT~ybH5m0XQ3XkP6h9xKdv9OoQ2NHw__')] bg-no-repeat h-screen bg-cover z-40">
+    <nav class="relative w-full flex items-center mx-auto ps-5 pe-5 pt-4 pb-4 justify-between font-[Inter] lg:p-0 lg:px-[6%] border-b border-b-gray-400 text-white">
+      <article class="font-[Inter] absolute top-60 left-16 p-6 flex flex-col gap-5">
+        <p class="text-lg text-white">VELORETTI</p>
+        <h2 class="text-white text-7xl">City Bikes</h2>
+        <p class="text-lg text-white">Forever Forward.</p>
+      </article> 
+      <div id="menu-sidebar" class="bars-toggle sm:mr-27 lg:hidden cursor-pointer text-xl"><i
+          class="fa-solid fa-bars"></i></div>
+      <div class="sm:flex sm:items-center sm:gap-15 sm:justify-center">
+        <a href="../index.html" class="tracking-[0.25em] text-lg mx-auto">VELORETTI</a>
+        <div class="hidden items-center justify-between gap-7 text-sm lg:flex">
+          <div class="group relative">
+            <a href="../pages/products.html" class="flex items-center pt-5 pb-5">ELECTRIC <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="./cities.html" class="flex items-center pt-5 pb-5">CITY <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">KIDS <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">ACCESSORIES</a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">STORES</a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+          <div class="group relative">
+            <a href="javascript:void(0)" class="flex items-center pt-5 pb-5">LEASING <svg class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></a>
+            <div class="group-hover:border-b-3 absolute bottom-0 w-full mt-[22px]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="justify-between items-center sm:flex sm:gap-[2em] md:gap-[3em]">
+        <a href="javascript:void(0)" class="gap-1 items-center hidden sm:flex"><span>EN</span> <img
+            src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="english" class="w-5 h-5"></a>
+        <a href="javascript:void(0)" class="hidden sm:flex"><i class="fa-regular fa-user"></i></a>
+        <a href="javascript:void(0)"><svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 18 21">
+            <path
+              d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+          </svg></a>
+      </div>
+    </nav>
+  </header>
+  <aside id="sidebar"
+    class="fixed top-15 lg:hidden inset-0 bg-white bg-opacity-75 z-50 transform -translate-x-full transition-all duration-500 ease-in-out top-0 left-0 h-full">
+    <div class="flex flex-wrap font-[Inter] justify-between">
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">ELECTRIC
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">CITY
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">KIDS
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">ACCESSORIES
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">STORES
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+      <a href="javascript:void(0)"
+        class="py-3 pr-5 mx-5 my-2 flex items-center justify-between border-r border-b border-black rounded-br-xl w-full md:w-[45%]">LEASING
+        <svg class="w-3 h-3 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1l4 4-4 4" />
+        </svg></a>
+    </div>
+    <div class="flex mx-5 mt-5 justify-between">
+      <button type="button"
+        class="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mb-2 sm:w-[32%] justify-center">
+        <svg class="w-4 h-4 me-2 -ms-1" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+          role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path fill="currentColor"
+            d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm89.6 32h-12.8c-22.4 10-46.4 16-72.8 16s-50.4-6-72.8-16h-12.8C67.2 288 0 355.2 0 438.4c0 41.6 31.2 73.6 73.6 73.6h300.8c41.6 0 73.6-31.2 73.6-73.6 0-83.2-67.2-150.4-150.4-150.4z" />
+        </svg>
+        Sign In
+      </button>
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-2 sm:w-[32%] justify-center">
+        <span class="mr-2">English</span>
+        <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="english" class="w-5 h-5">
+        <svg class="w-2.5 h-2.5 ms-3 justify-self-end" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 1 4 4 4-4" />
+        </svg>
+      </button>
+      <button type="button"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 text-center items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-2 sm:w-[32%] justify-center hidden sm:inline-flex">
+        <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+          viewBox="0 0 18 21">
+          <path
+            d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+        </svg>
+        My Card
+      </button>
+    </div>
+  </aside>
+  <main class="font-[Inter] flex flex-col gap-15 items-center mt-15">
+    <h3 class="text-5xl xl:text-9xl md:mb-5">Forever forward.</h3>
+    <section class="w-full flex flex-col-reverse sm:flex-row sm:w-[90%] justify-center items-center">
+      <figure class="w-[90%] mx-auto relative h-[150vh]">
+        <img class="w-[295px] absolute left-0 top-20" src="https://s3-alpha-sig.figma.com/img/a887/2ae4/68ad396e41e03b83bef3304ce3beeffc?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=r0HmQ8tH5bs0nijdZu1gw73AkrjFWV3Q~uJ-HOZ2-FcSK87xSc5yPkO0TbSvzwCS7Cjokg-taPfrOqk~bIrD3970SwKotCbUCXmF2iY4oqfG3IntZHKvlWEWLeaiP9ZB8yFAhAJcWWl9gIsfXbigNirvu6osrod5I4OETx3qNENmGEGedsileIUMr-sEeSug83caKymrMTXRnV7sDqiuSGvcKxDKnXBzQfVhtygEdifCgpetZbxVrT950lnwYhViBAuVMAqGhzPGrYieNJgCjb9udOX8t4qYGSDdfy2hrln7362UKNEvZ8G0B7buwAzEB3TJiNzJzuQbsUngJfgRhg__" alt="modling">
+        <img class="w-[600px] absolute right-0" src="https://s3-alpha-sig.figma.com/img/9657/bdaf/f8d38bc44486251f6b3059aa17b377c9?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AiE8QCQpn5Is2D2zpzp3vNe93HdQAlYi6wyfRpSxZTr1NclqA9K5Cos5nqmAguXvCAIwH7tso5vl5SxZDOAqK9u4xgP20ZIIdmvNILomw2iKpIG2GL8PMWEUXTEux8xEf0eeoGSnMu4kuIL3dY1otlhr5pYAPLGoYhyThCagqxqMu08skz~iEvwPE6BDTKgwUCxyAmDgs7Om5T88tdV9yF~t8XcOycnGoJRndscpydub7q-ZXRNCk5bjIoO8IoHs77uExCKWYWrqdQ8Rtdgmm1jPPkkLAXqh7Rgm9JfogQxc~rK7KkhZxawav-gg5LPTZXU4~GeA4uZNJCJHJDmPbg__" alt="">
+        <div class=" text-black border border-gray-400 rounded-lg absolute bottom-10 bg-white translate-x-[500px]">
+          <p class="p-14 text-xl">Our women's bicycles are <br>
+            for everyone who likes to<br>
+            combine style with<br>
+            performance. In this<br>
+            range, available are the<br>
+            Café Racer and the<br>
+            Robyn, both frames with a<br>
+            lower tube, making it easy<br>
+            to step through.</p>
+        </div>
+      </figure>
+    </section>
+    <section class="w-full overflow-x-auto bg-[#b6b6b6] pt-15 pb-44 pl-15" style="scrollbar-width: none; -ms-overflow-style: none;" >
+      <div class="flex gap-10">
+        <div class="bg-[#EBEDEE] w-[500px] h-[400px] flex flex-col justify-between shrink-0">
+          <div>
+            <img src="https://s3-alpha-sig.figma.com/img/4ba5/5ec6/d009c75158565862ccaec3d0b7b95bc5?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R~rxqWNTEnaKS~tb42inpeJKxA1IQhloFo~jmwrwxc8njLzvSDb3FqnsgiFMq0fX6uo7m92XMwPM3FAwyAIDuTdZYqAUkdWBdkSpU1seABkoVvVtrS1ieYF9pNzUe1e3MFH-GwiBiir-QHDRqqHSNwjbI68H2IypToiqc2uQR9Cmm0oBl2MkGmoPluw7FEV5V92Wh6tk3NMcSvKtfHTDOmp9We1OZENkjAvoAZFrgn~JYexixk6xfc64NIb2p5vMCvw09YQPVQS60x0XcbSqwYJAFJjn~jOMRYOBKCBO7NvtXdofSJE9FiB2zru1xJHXw8pAixnvScOrYlZ3HtEAsg__" alt="">
+          </div>  
+          <div class="flex justify-between">
+            <p class="text-white">Caféracer</p>
+            <p class="text-gray-500">Women</p>
+          </div>        
+        </div> 
+        <div class="bg-[#EBEDEE] w-[500px] h-[400px] flex flex-col justify-between shrink-0">
+          <div>
+            <img src="https://s3-alpha-sig.figma.com/img/bcbe/207b/c58dfc7d60136c6b3929882100541aab?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=LnghyAy~ie~lPKTVyhVH2BCosQDdobePlO6n1q8PTVN4fJt4DDibCNbLnJjxNJUZh7pMgp4-3yAmeemESh4LWUX9DmgdfDDDV0zkEw-F21MTef7gWFkFZFv1uA1gPmEneZ3NByKk1Q7X5Iyk1bjpSyaJUW~Gph5-GI9s7PgEPLfnaJWuwSPTpM8MH-aq8btfGQjy4QCwecQtk-ie2vxytA6my6yAk-RwQC1x8D47T1ybNbFDYLQ0t5IS24~6bYN1m0FKsIC-nwObF1IH~gSEogwyJ9M7STIqbgoO71LbKQVN9HDXCRE6wOrc0ioKkNj3o5zQJqlf2qCfMXbvcuOIKA__" alt="">
+          </div>  
+          <div class="flex justify-between">
+            <p class="text-white">Robyn</p>
+            <p class="text-gray-500">Women</p>
+          </div>        
+        </div>  
+        <div class="bg-[#EBEDEE] w-[500px] h-[400px] flex flex-col justify-between shrink-0">
+          <div>
+            <img src="https://s3-alpha-sig.figma.com/img/68b1/8c41/599fb00b5bd7b5dd7061dfbf97955b78?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MFxxrWZwNd7iq9U5ZUq3UueSh6KGBqbSrBmjvq6-I~LeGm7P2vzjjQFA6zTogDNLDuWQ4LjEa-7hDtpgtZtan-t4VPtfFRi-Ccz~q6lsHKwfeERqNZQ2VDu1-7-qJStBvpMeYQ7kcmBhfloSoSE~hCuDVtCpvIa0~mNa2jv8hOtWvKCbNkoe7ggGPaf8FW24SNGOPP0RaVYO5ysJx~V7Xx2ThkoKLTDbT53bTkMJ4ED72rq7l8LQc8Ap1BhD-uigUrOE6cpWeudbRIY4ibvjIjbtk-QT9rhddd2eXyLN6DuO~H5XaTgCf1-2KGCfhXpMgOL7lPI7C9YTTv-6qovzjw__" alt="">
+          </div>  
+          <div class="flex justify-between">
+            <p class="text-white">Caféracer</p>
+            <p class="text-gray-500">Man</p>
+          </div> 
+        </div> 
+      </div>
+    </section>
+    <section  on class="w-full flex flex-col-reverse sm:flex-row sm:w-[90%] justify-center items-center">
+      <figure class="w-[90%] mx-auto relative h-[170vh]">
+        <img class="w-[550px] absolute left-0" src="https://s3-alpha-sig.figma.com/img/425f/1314/0f8f6d9666de8dd861c0f136232fb1d5?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gwUc07ffHLNSWIS-32v2kbQIvzjxrL5cfSjz5ID0J8Chig~2QS1YBopjbRP1yVHaAWW2sFYSvm7ucSf7MYjAuMxGwMY8GQtbhLAw0BYmdOhW9CV6-Tx9A4-s3hBm~txT3ozIz89LKmBI-FNAnaCDnY4e01GIpuQgn1MbZac2btiPEnR9r4T149ouAyOytuLcJuw5ZVrJ15RmeyQPXiQK~hsQ6r-GvKamBf1RztZJgkxK6B6vIw6v1PnDN4le5Unnzvd~-gt2ZxGeueuT24nd1FZLu4x0FOIUxBF-NwK0~RupbmZrWpArEJaOLDT1OiJ6LO2Q~iZ3xSNdwLVsCjyT7Q__" alt="modling">
+        <img class="w-[250px] absolute right-0" src="https://s3-alpha-sig.figma.com/img/2a56/ac26/fc0ded4173fbea627e5a015f249c18dc?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VigZ11wqmBUrr~upKrbfb9yNZRjQ8W-OytCe0RqyW2jFtoUw0GMqWg3WaQjgwi3Pd1ad73njYqDX6-jn4NI~V-1BT~LPBG5o1GSS-puB~-o5i~PcWHUEJzgqe~M39cjL~unA3CFXwhda8kTWoGfN7Ca~Rt8Go7BkomIuU9TO3d-p0kvY4RrL1H~YErz~-CzQ7FWkdfygMNFUsONh81FqTqpxG48yyVBxfbFP0AD34UkxusZAtRRJ7TWrrzYd9yOyXClnVDxmeRWbQMJpBmrs6tKekp9wcWQiHLj2VFlZRc5F6Jj8igV1MlvViFPADxNGVfDM-py3RcQ7CFdNoPij~A__" alt="">
+        <img class="w-[350px] absolute left-1/4 bottom-64" src="https://s3-alpha-sig.figma.com/img/8d73/ba98/004930786ea8f296feaab682b14997aa?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JAJjgrAYw1Os-EhZD~xsCgUjdoIAS3mudQVYKKUH-Owh9I81ouk5AzGOyc5IxTSnRELyFUkRC5Vsq5LdC3yMpNatrtGxZvf7ZSqO0gDxo7FdeeE2BG6k4gFEMhUlwZctRMbGiMhPmfM2k7L7NHE-Z1dpMgpfmlcGa0TIn8QPGj35vd9PWGP~ccHNQoiWiODwHBi8BpDnxgY65t-OYvEBY4Yg2pnlwOdTNl6ICwR6HJljjA5IB-xYhQyBOywB3Scmdvhbu~4JEaehU-uafLhtfTmHIXNVbTo1SxmRMvcMZMFiu~lqbVWz6TFAcr9B7xnGU1XvU8p2Dtqa6~WKEdSJkA__" alt="">
+        <div class=" text-black border border-gray-400 rounded-lg absolute bg-white right-70">
+          <p class="p-14 text-xl text-gray-500">Whether you like it easy or <br>
+            fast, we got both. Our<br>
+            men's range of bicycles<br>
+            combine modern clean<br>
+            design with great quality,<br>
+            so they're perfect for your<br>
+            daily city commute. Our<br>
+            men citybikes are the<br>
+            Caféracer, Caféchaser<br>
+            and the Berlin, but feel<br>
+            free to opt for a women's<br>
+            bike for that easy hop-on-<br>
+            hop-off Amsterdam style.</p>
+        </div>
+        <h2 class="absolute bottom-0 right-1/2 translate-x-1/2 text-8xl">City bikes for <br>
+          everyone.</h2>
+      </figure>
+    </section>
+  </main>
+  <footer class="font-[Inter] bg-[#404243] text-white mt-14 relative">
+    <div class="bg-[#404243] py-6 px-4 md:px-12">
+      <div class="max-w-[70%] mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+        <p class="flex-1 text-sm">
+          Ready to take the Electric Ivy or Ace for a spin? Electric test rides are now available in
+          Amsterdam, Amstelveen, Abcoude, Bussum, Den Haag, Nijmegen, Weesp, Wormerveer,
+          Berlin, Hamburg, and Munich. Schedule your test ride now and we'll see you there.
+        </p>
+        <button class="bg-white text-black py-2 px-6 rounded-full text-sm flex-shrink-0">
+          BOOK NOW
+        </button>
+      </div>
+    </div>
+    <div class="border-t border-gray-500 py-8 px-4 md:px-12 bg-[#101110]">
+      <div class="max-w-[80%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-3 gap-6 text-sm">
+          <div>
+            <h4 class="font-medium mb-2">Explorer</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="#">Electric bikes</a></li>
+              <li><a href="#">City bikes</a></li>
+              <li><a href="#">Kids' bikes</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Outlet</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Insurance Electric</a></li>
+              <li><a href="#">Size guide</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium mb-2">About</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="../pages/about-us.html">About us</a></li>
+              <li><a href="#">Journal</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium mb-2">Help</h4>
+            <ul class="space-y-1 text-gray-300">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Assembly & manuals</a></li>
+              <li><a href="#">Payment options</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col md:items-start md:ml-auto">
+          <h4 class="font-medium text-lg">Join the ride.</h4>
+          <p class="text-sm text-gray-300 mb-3">Sign up for our newsletter.</p>
+          <div class="flex border border-gray-400 rounded-full overflow-hidden w-full max-w-md">
+            <input type="email" placeholder="Enter your email address here"
+              class="flex-1 bg-transparent px-4 py-2 text-white outline-none">
+            <button class="bg-white text-black px-6 py-2 rounded-full text-sm">
+              Subscribe
+            </button>
+          </div>
+          <div class="flex items-center gap-2 mt-3">
+            <input type="checkbox" id="privacy" class="rounded border-gray-400">
+            <label for="privacy" class="text-xs text-gray-300">
+              By signing up, I agree to the <a href="#" class="underline">privacy policy</a> of Veloretti.
+            </label>
+          </div>
+          <div class="flex gap-3 mt-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#body" class="absolute right-10 top-30 bg-white w-10 h-10 rounded-full text-black flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+  
+    <script>
+    let toggleMark = document.getElementById("menu-sidebar");
+    let sidebar = document.getElementById("sidebar")
+    toggleMark.addEventListener("click", () => {
+      if (document.querySelector(".bars-toggle")) {
+        toggleMark.classList.remove("bars-toggle");
+        toggleMark.classList.add("x-mark");
+        toggleMark.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        sidebar.classList.remove("-translate-x-full");
+        sidebar.classList.add("translate-x-0");
+      } else {
+        toggleMark.classList.remove("x-mark");
+        toggleMark.classList.add("bars-toggle");
+        toggleMark.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("-translate-x-full");
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("[data-accordion-target]").forEach((button) => {
+      button.addEventListener("click", function () {
+        const target = document.querySelector(this.getAttribute("data-accordion-target"));
+        const icon = this.querySelector(".icon-toggle");
+
+        // Toggle visibility
+        if (target.classList.contains("hidden")) {
+          target.classList.remove("hidden");
+          icon.textContent = "−"; // Show minus when open
+        } else {
+          target.classList.add("hidden");
+          icon.textContent = "+"; // Show plus when closed
+        }
+      });
+    });
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
